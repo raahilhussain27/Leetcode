@@ -8,7 +8,6 @@ public:
             binary+=to_string(rem);
             n/=2;
         }
-        for(auto i:binary) cout<<i;
         int ans=0;
         for(auto i:binary){
             if(i=='1') ans++;
