@@ -28,35 +28,26 @@ public:
         while(t1!=nullptr || t2!=nullptr){
             if(t1!=nullptr && t2!=nullptr){
                 sum=k+t1->val+t2->val;
-                
-                    t->next=new ListNode(sum%10);
-                    sum/=10;
-                    k=sum;
-                
-                
+                t->next=new ListNode(sum%10);
+                sum/=10;
+                k=sum;        
                 t1=t1->next;
                 t2=t2->next;
                 t=t->next;
             }
             else if(t1!=nullptr && t2==nullptr){
                 sum=k+t1->val;
-                
-                    t->next=new ListNode(sum%10);
-                    sum/=10;
-                    k=sum;
-                
-                
+                t->next=new ListNode(sum%10);
+                sum/=10;
+                k=sum;        
                 t1=t1->next;
                 t=t->next;
             }
             else{
                 sum=k+t2->val;
-                
-                    t->next=new ListNode(sum%10);
-                    sum/=10;
-                    k=sum;
-                
-               
+                t->next=new ListNode(sum%10);
+                sum/=10;
+                k=sum;        
                 t2=t2->next;
                 t=t->next;
             }
