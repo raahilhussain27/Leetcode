@@ -26,9 +26,7 @@ public:
                 else{
                     t1->next=n;
                     t1=n;
-                }
-                
-                
+                } 
             }
             else{
                 ListNode* n=new ListNode(t->val);
@@ -40,12 +38,9 @@ public:
                     t2->next=n;
                     t2=n;
                 }
-                
-                
             }
             t=t->next;
         }
-
         if(head1 == nullptr)
             return head2;
         t1->next = head2;
